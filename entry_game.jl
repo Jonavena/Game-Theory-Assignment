@@ -9,8 +9,16 @@
 #
 # ============================================================
 
-include(joinpath(@__DIR__, "..", "src", "GameTheory.jl"))
-using .GameTheory
+include("linalg.jl")   # solve_linear_system, vec_max_diff
+include("combi.jl")    # combinations, cartesian_product, powerset_nonempty
+
+# ── Problem 1: Normal-form games ──────────────────────────────────────────
+include("normal_form.jl")
+
+# ── Problem 2: Extensive-form games ───────────────────────────────────────
+include("extensive_form.jl")
+include("subgames.jl")
+include("solution.jl")
 
 println("=" ^ 58)
 println("  MARKET ENTRY GAME  (Perfect Information)")

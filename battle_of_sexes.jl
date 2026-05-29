@@ -15,8 +15,13 @@
 
 # ============================================================
 
-include(joinpath(@__DIR__, "..", "src", "GameTheory.jl"))
-using .GameTheory
+
+include("linalg.jl")   # solve_linear_system, vec_max_diff
+include("combi.jl")    # combinations, cartesian_product, powerset_nonempty
+
+# ── Problem 1: Normal-form games ──────────────────────────────────────────
+include("normal_form.jl")
+
 
 println("=" ^ 58)
 println("  BATTLE OF THE SEXES")
@@ -54,8 +59,4 @@ mixed = mixed_nash_equilibria_2player(game)
 print_pure_ne(game, pure)
 print_mixed_ne(game, mixed)
 
-println()
-println("Analysis:")
-println("  2 pure-strategy NE: both go to Opera, or both go to Football.")
-println("  1 mixed-strategy NE: Alice randomises 2/3 Opera, Bob randomises 1/3 Opera.")
-println("  The mixed NE has a lower expected payoff than either pure NE — a coordination trap.")
+
