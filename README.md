@@ -1,3 +1,12 @@
+Student Name: Jona Shikonga
+Student no: 220069840
+Qualification: BACHELOR OF ARTIFICIAL INTELLIGENCE HONOURS
+COURSE: COMPUTATIONAL GAME THEORY 
+
+Assignment
+
+
+
 Problem 1 ............................................... .. . . . . . . . . . . . . . . . . . .
 
 In this problem, you are tasked with the implementation (from scratch) in Julia of a pro
