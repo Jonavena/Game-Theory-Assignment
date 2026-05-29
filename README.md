@@ -1,6 +1,9 @@
 Student Name: Jona Shikonga
+
 Student no: 220069840
+
 Qualification: BACHELOR OF ARTIFICIAL INTELLIGENCE HONOURS
+
 COURSE: COMPUTATIONAL GAME THEORY 
 
 Assignment
